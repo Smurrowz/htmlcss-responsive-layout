@@ -1,0 +1,74 @@
+/* generali */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+menu, ol, ul{
+  list-style: none;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+
+/* header */
+
+.main-header{
+  background-color:#0084FD ;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  font-size: 18px;
+}
+
+.header-menu{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header-menu a{
+  color: white;
+  text-decoration: none;
+} 
+.menu-hidden{
+  display: none;
+}
+.button-white-small{
+  
+  padding: 10px 15px ;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+}
+
+/* header tablet */
+@media screen and (max-width: 810px ) {
+  .header-menu{
+    display: none;
+  }
+  .menu-hidden{
+    display: block;
+  }
+
+}
+/* header mobile */
+@media screen and (max-width: 440px ) {
+  .header-menu{
+    display: none;
+  }
+  .menu-hidden{
+    display: block;
+  }
+
+}
