@@ -24,7 +24,7 @@ ul {
   margin: 0 auto;
 }
 
-.row {
+.pt-1 .row {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -35,10 +35,11 @@ ul {
   display: flex;
 }
 
-.sect-odd{
+.sect-odd {
   background-color: white;
 }
-.sect-even{
+
+.sect-even {
   background-color: #9792E4;
 }
 
@@ -65,7 +66,7 @@ ul {
   color: white;
 }
 
-.col-33 {
+.pt-1 .col-33 {
   flex-basis: calc((100% / 3) - 24px);
   border-radius: 12px;
   display: flex;
@@ -75,7 +76,7 @@ ul {
   gap: 40px;
 }
 
-.col-66 {
+.pt-1 .col-66 {
   flex-basis: calc((100% / 3 * 2) - 24px);
   border-radius: 12px;
   display: flex;
@@ -151,7 +152,7 @@ ul {
 
 .pt-1 {
   padding: 45px 0 100px 0;
-  
+
 }
 
 .pt-1 .col-33,
@@ -182,13 +183,13 @@ ul {
 /* sezione 1 tablet */
 
 @media screen and (max-width: 810px) {
-  .col-66 {
+  .pt-1 .col-66 {
     flex-direction: column;
     gap: 40px;
 
   }
 
-  .col-50-2 {
+  .pt-1 .col-50-2 {
     align-items: flex-start;
   }
 
@@ -201,16 +202,16 @@ ul {
 /* sezione 1 mobile */
 @media screen and (max-width: 440px) {
 
-  .col-66,
-  .col-33 {
-    flex-basis: 100%;
+  .pt-1 .col-66,
+  .pt-1 .col-33 {
+    flex-basis: calc(100% - 24px);
   }
 }
 
 
 /* sezione 2 */
 .pt-2 {
-  
+
   padding: 100px 0 70px 0;
 }
 
@@ -262,18 +263,21 @@ ul {
     flex-direction: column;
     gap: 40px;
   }
-  .col-50{
+
+  .col-50 {
     width: 100%;
   }
+
   .pt-2 .col-50:first-child h3 {
     font-size: 4rem;
   }
+
   .pt-2 .col-50:first-child img {
     margin-bottom: 90px;
     width: 100%;
-  
+
   }
-  
+
 }
 
 /* sezione 2 mobile */
@@ -286,64 +290,72 @@ ul {
 
 
 /* sezione 3 */
-.pt-3{
+.pt-3 {
   padding: 65px 0;
 }
 
-.pt-3 .col{
+.pt-3 .col {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 55px
 }
 
-.pt-3 header{
+.pt-3 header {
   text-align: center;
 }
-.pt-3 h2{
-  margin-top: 50px ;
-  margin-bottom:50px ;
-  color:#9792E4 ;
-  font-size:3rem ;
+
+.pt-3 h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #9792E4;
+  font-size: 3rem;
 }
-.pt-3 p{
+
+.pt-3 p {
   font-size: 18px;
 }
-.pt-3 img{
-  max-width:200px ;
+
+.pt-3 img {
+  max-width: 200px;
   aspect-ratio: 1;
   border-radius: 100%;
   object-fit: cover;
 }
-.quote{
-  padding: 0 60px;
+
+.quote {
+  padding: 0 0 0 60px;
   color: white;
 }
-.quote p{
-  margin-bottom:40px ;
+
+.quote p {
+  margin-bottom: 40px;
   font-weight: 18px;
 }
-.pt-3 .card{
-  background-color:#9792E4 ;
-  padding:25px 15px 50px  15px;
+
+.pt-3 .card {
+  background-color: #9792E4;
+  padding: 25px 15px 50px 15px;
   border-radius: 40px;
 }
 
-.card.flex{
+.card.flex {
   align-items: center;
 }
 
-.quote p:before{
+.quote p:before {
   content: open-quote;
   font-weight: bold;
   font-size: 25px;
 }
-.quote p:after{
+
+.quote p:after {
   content: close-quote;
   font-weight: bold;
   font-size: 25px;
 }
-.card-container{
+
+.card-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -351,18 +363,92 @@ ul {
 
 
 /* sezione 3 tablet */
-@media screen and (max-width: 810px) {
- 
-}
+@media screen and (max-width: 810px) {}
 
 
 /* sezione 3 mobile */
 @media screen and (max-width: 440px) {
- .flex.card{
-  flex-direction: column;
- }
- .quote{
-  padding: 0;
+  .flex.card {
+    flex-direction: column;
+  }
+
+  .quote {
+    padding: 0;
+    text-align: center;
+  }
+  .pt-3 h2 {
+    font-size: 2.5rem;
+  }
+  
+}
+
+
+/* sezione 4 */
+
+.pt-4 {
+  padding: 75px 0 65px 0;
+}
+
+.pt-4 h2 {
+  font-size: 3rem;
+  color: white;
   text-align: center;
- }
+  margin-bottom: 75px;
+}
+
+.pt-4 .col-33 {
+  flex-basis: calc((100% / 3) - 30px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 35px 35px 35px;
+  gap: 40px;
+  background-color: white;
+}
+
+.pt-4 .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-right: -30px;
+}
+
+.button-violet {
+  background-color: #9792E4;
+  color: white;
+  align-self: flex-start;
+}
+
+.pt-4 h3 {
+  color: #9792E4;
+  font-size: 1.5rem;
+}
+
+.benefit-number {
+  color: #9792E4;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* sezione 4 tablet */
+@media screen and (max-width: 810px) {
+  .pt-4 .col-33 {
+    flex-basis: calc(50% - 30px);
+  }
+}
+
+
+/* sezione 4 mobile */
+@media screen and (max-width: 440px) {
+  .pt-4 .col-33 {
+    flex-basis: calc(100% - 30px);
+  }
+  .benefit-number{
+    
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .pt-4 h2 {
+    font-size: 2.5rem;
+  }
 }
