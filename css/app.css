@@ -13,10 +13,56 @@ menu, ol, ul{
   padding: 0 30px;
   margin: 0 auto;
 }
-.flex{
-  display: flex;
-}
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  
+  
+}
+.button-small{
+  padding: 10px 15px ;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+}
+.button-white{
+  background-color: white;
+}
+.button-big{
+  padding: 15px 50px ;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+.button-blue{
+  background-color: #0084fd;
+  color:white ;
+}
+.col-33{
+  flex-basis: calc((100% / 3) - 24px );
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+  align-items: center;
+  gap: 40px;
+  
+}
+.col-66{
+  flex-basis: calc((100% / 3 * 2) - 24px ) ;
+  border-radius: 12px;
+  display: flex;
+  padding: 40px 25px 40px 25px;
+}
+.col-50{
+  flex-basis: 50%;
+  flex-direction: column;
+  gap: 40px;
+  display: flex;
+  
+}
 /* header */
 
 .main-header{
@@ -43,15 +89,6 @@ menu, ol, ul{
 .menu-hidden{
   display: none;
 }
-.button-white-small{
-  
-  padding: 10px 15px ;
-  border-radius: 20px;
-  border: none;
-  background-color: white;
-  font-size: 18px;
-}
-
 /* header tablet */
 @media screen and (max-width: 810px ) {
   .header-menu{
@@ -60,7 +97,7 @@ menu, ol, ul{
   .menu-hidden{
     display: block;
   }
-
+  
 }
 /* header mobile */
 @media screen and (max-width: 440px ) {
@@ -70,5 +107,61 @@ menu, ol, ul{
   .menu-hidden{
     display: block;
   }
+  
+}
 
+
+/* main */
+
+/* sezione 1 */
+
+.pt-1{
+  padding: 45px 0 100px 0 ;
+  background-color: white;
+}
+
+.pt-1 .col-33,.pt-1 .col-66{
+  background-color: #B5DDFF;
+}
+.col-50-2{
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+.col-50-2 img{
+  width: 200px;
+  margin-bottom: -40px;
+}
+
+.pt-1 h3{
+  color: #0084fd;
+  font-size: 1.5rem;
+}
+
+.pt-1 p{
+  line-height: 1.6rem;
+}
+
+/* sezione 1 tablet */
+
+@media screen and (max-width: 810px ) {
+  .col-66{
+    flex-direction: column;
+    gap: 40px;
+    
+  }
+  .col-50-2{
+    align-items: flex-start;
+  }
+  .button-big{
+    align-self: flex-start;
+  }
+}
+
+
+/* sezione 2 mobile */
+@media screen and (max-width: 440px ) {
+  .col-66, .col-33{
+    flex-basis: 100%;
+  }
 }
