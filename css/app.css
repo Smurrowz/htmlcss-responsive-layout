@@ -24,6 +24,12 @@ ul {
   margin: 0 auto;
 }
 
+.container-extra-small {
+  max-width: 550px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .pt-1 .row {
   display: flex;
   flex-wrap: wrap;
@@ -534,53 +540,57 @@ ul {
     flex-basis: 100%;
     padding-left: 0;
   }
-  .pt-5 .flex{
+
+  .pt-5 .flex {
     flex-direction: column;
   }
-  .pt-5 h2{
+
+  .pt-5 h2 {
     font-size: 3rem;
   }
 }
 
 
 /* sezione 6 */
-.pt-6 > .container{
-  max-width: 550px;
-}
-.pt-6{
+.pt-6 {
   padding: 65px 0;
   color: white;
   text-align: center;
 }
 
-.pt-6 .adv{
+.pt-6 .adv {
   font-size: 6rem;
-  color:#FDC15F ;
+  color: #FDC15F;
   margin-top: 55px;
   margin-bottom: 55px;
   display: block;
 }
-.pt-6 h2{
+
+.pt-6 h2 {
   font-size: 3rem;
   margin-top: 35px;
 }
-.pt-6 p{
-line-height: 2rem;
-font-size: 20px;
+
+.pt-6 p {
+  line-height: 2rem;
+  font-size: 20px;
 }
-.button-start{
+
+.button-start {
   background-color: white;
   color: #9792E4;
-  margin-top:40px ;
-  margin-bottom:40px ;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 .button-extrabig {
   padding: 35px 80px;
   border-radius: 50px;
   border: none;
   font-size: 20px;
 }
-.pt-6 address{
+
+.pt-6 address {
   font-style: normal;
   font-size: 20px;
 }
@@ -593,12 +603,33 @@ font-size: 20px;
 
 /* sezione 6 mobile */
 @media screen and (max-width: 440px) {
-  .pt-6 .adv{
+  .pt-6 .adv {
     font-size: 4rem;
   }
-  .pt-6 h2{
+
+  .pt-6 h2 {
     font-size: 2rem;
-    
+
   }
 
+}
+
+
+/* footer */
+
+.pt-7 {
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+.pt-7 p:first-child{
+  margin-bottom: 70px;
+}
+.pt-7 a {
+  color: #9792E4;
+}
+.pt-7 p{
+  line-height: 1.5rem;
+  font-size: 18px;
 }
