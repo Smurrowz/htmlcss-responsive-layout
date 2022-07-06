@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 menu,
@@ -34,7 +35,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-right: -24px;
 }
 
 .flex {
@@ -73,8 +73,9 @@ ul {
 }
 
 .pt-1 .col-33 {
-  flex-basis: calc((100% / 3) - 24px);
+  flex-basis: 30%;
   border-radius: 12px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding: 40px 25px;
@@ -83,8 +84,9 @@ ul {
 }
 
 .pt-1 .col-66 {
-  flex-basis: calc((100% / 3 * 2) - 24px);
+  flex-basis:calc(60% + 24px) ;
   border-radius: 12px;
+  flex-grow: 2;
   display: flex;
   padding: 40px 25px 40px 25px;
 }
@@ -564,6 +566,7 @@ ul {
   margin-top: 55px;
   margin-bottom: 55px;
   display: block;
+  font-weight: bolder;
 }
 
 .pt-6 h2 {
